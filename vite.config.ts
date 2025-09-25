@@ -11,6 +11,7 @@ export default defineConfig({
       "@shared": path.resolve(__dirname, "./shared"),
     },
   },
+  base: "./", // ← Add this line for relative paths
   build: {
     outDir: "dist",
   },
