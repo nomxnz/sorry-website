@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  root: path.resolve(__dirname, "client"), // ← Important! Use client as root
+  root: path.resolve(__dirname, "client"), // points to client folder
   plugins: [react()],
   resolve: {
     alias: {
@@ -13,7 +13,7 @@ export default defineConfig({
   },
   base: "./",
   build: {
-    outDir: path.resolve(__dirname, "dist"), // output folder at project root
+    outDir: path.resolve(__dirname, "dist"), // output at project root
     emptyOutDir: true
   },
 });
